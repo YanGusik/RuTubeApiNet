@@ -24,7 +24,7 @@ var videoKuplinov = api.GetVideoAsync(idVideo).Result;
 api.IsVideoExistsAsync(idVideo).Result; // True
 api.IsVideoExistsAsync(idNotExistsVideo).Result; // False
 
-Console.WriteLine("{0} - views {1} / category - {2} / author - {3} / subscribers - {4}",
+Console.WriteLine("{0} \nViews - {1} \nCategory - {2} \nAuthor - {3} \nSubscribers - {4}",
     videoKuplinov.Video.Title,
     videoKuplinov.Video.Hits,
     videoKuplinov.Video.Category.Name,
@@ -35,5 +35,9 @@ Console.WriteLine("{0} - views {1} / category - {2} / author - {3} / subscribers
 ----
 ### Output
 ```
-Скаймаг гайд Дота 2 Skywrath Mage dota 2.mp4 - views 371 / category - Видеоигры / author - Дота 2 для новичков / subscribers - 2
+Скаймаг гайд Дота 2 Skywrath Mage dota 2.mp4
+Views 371
+Category - Видеоигры
+Author - Дота 2 для новичков
+Subscribers - 2
 ```
