@@ -36,7 +36,7 @@ Console.WriteLine("{0} \nViews - {1} \nCategory - {2} \nAuthor - {3} \nSubscribe
 ### Output
 ```
 Скаймаг гайд Дота 2 Skywrath Mage dota 2.mp4
-Views 371
+Views - 371
 Category - Видеоигры
 Author - Дота 2 для новичков
 Subscribers - 2
