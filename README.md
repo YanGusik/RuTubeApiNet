@@ -24,13 +24,16 @@ var videoKuplinov = api.GetVideoAsync(idVideo).Result;
 api.IsVideoExistsAsync(idVideo).Result; // True
 api.IsVideoExistsAsync(idNotExistsVideo).Result; // False
 
-// en {0} - {1} views / {2} category / {3} author / {4} channel subscribers
-// ru {0} - просмотров {1} / категория {2} / автор {3} / подписчиков канала {4}
-
-Console.WriteLine("{0} - просмотров {1} / категория {2} / автор {3} / подписчиков канала {4}",
+Console.WriteLine("{0} - views {1} / category - {2} / author - {3} / subscribers - {4}",
     videoKuplinov.Video.Title,
     videoKuplinov.Video.Hits,
     videoKuplinov.Video.Category.Name,
     videoKuplinov.Video.Author.Name,
     videoKuplinov.Video.FeedSubscribersCount);
+```
+
+----
+### Output
+```
+Скаймаг гайд Дота 2 Skywrath Mage dota 2.mp4 - views 371 / category - Видеоигры / author - Дота 2 для новичков / subscribers - 2
 ```
